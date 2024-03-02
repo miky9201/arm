@@ -1,9 +1,15 @@
 import React from 'react';
+import { motion } from "framer-motion";
 import logo from '../assets/images/logo.png';
 
-function Logo({width, padding}) {
+function Logo({width, padding, imgIndex}) {
     return (
-        <img className={`${width} ${padding}`} src={logo} alt='logo-arm'/>
+        <motion.img
+            className={`${width} ${padding} ${imgIndex > 0 ? `-z-10` : `z-10`}`} 
+            src={logo} 
+            alt='logo-arm'
+            
+        />
     );
 }
 
