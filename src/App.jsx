@@ -11,12 +11,6 @@ function App() {
 
   const [imgIndex, setImgIndex] = useState(0);
 
-  const handleWordings = () => {
-      if (imgIndex > 0) {
-        
-      }
-  }
-
   return (
     <BlurDiv>
       <Navbar />

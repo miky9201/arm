@@ -5,6 +5,8 @@ function Text({ text, size, padding, textAlign, wSpacing, imgIndex }) {
     return (
         <motion.p 
             className={`
+                pointer-events-none
+                drop-shadow-md
                 font-goldman 
                 text-white uppercase 
                 ${size} 

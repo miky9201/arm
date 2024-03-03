@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { motion, useMotionValue } from "framer-motion";
 import Slides from './Slides';
-import slidesArray from '../assets/slidesArray.js';
+import sliderDB from '../assets/slidesArray.js';
 
-const DRAG_BUFFER = 100;
+const DRAG_BUFFER = 50;
 
 function Slider({imgIndex, setImgIndex}) {
 
@@ -12,6 +12,7 @@ function Slider({imgIndex, setImgIndex}) {
 
     const onDragStart = () => {
         setDragging(true)
+        console.log(dragging)
     }
 
     const onDragEnd = () => {
@@ -19,7 +20,7 @@ function Slider({imgIndex, setImgIndex}) {
 
         const x = dragX.get()
 
-        if (x <= -DRAG_BUFFER && imgIndex < slidesArray.length-1) {
+        if (x <= -DRAG_BUFFER && imgIndex < sliderDB.length-1) {
             setImgIndex((pv) => pv + 1)
         } else if (x >= DRAG_BUFFER && imgIndex > 0) {
             setImgIndex((pv) => pv - 1)
@@ -43,9 +44,14 @@ function Slider({imgIndex, setImgIndex}) {
             onDragStart={onDragStart}
             onDragEnd={onDragEnd}
             className='flex items-center cursor-grab active:cursor-grabbing'>
-                {slidesArray.map((imageSrc, index) => {
+                {sliderDB.map((slide) => {
                     return (
-                        <Slides key={index} imageSrc={imageSrc} />
+                        <Slides 
+                            key={slide.id} 
+                            imageSrc={slide.source} 
+                            imageTitle={slide.title} 
+                            imageDesc={slide.description}
+                        />
                     )
                 })} 
             </motion.div> 

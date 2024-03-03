@@ -5,7 +5,7 @@ import logo from '../assets/images/logo.png';
 function Logo({width, padding, imgIndex}) {
     return (
         <motion.img
-            className={`${width} ${padding} ${imgIndex > 0 ? `-z-10` : `z-10`}`} 
+            className={`pointer-events-none ${width} ${padding} ${imgIndex > 0 ? `-z-10` : `z-10`}`} 
             src={logo} 
             alt='logo-arm'
             

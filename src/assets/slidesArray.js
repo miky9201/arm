@@ -1,28 +1,154 @@
-import slide1 from "./slides/slide-1.jpg";
-import slide2 from "./slides/slide-2.jpg";
-import slide3 from "./slides/slide-3.jpg";
-import slide4 from "./slides/slide-4.jpg";
-import slide5 from "./slides/slide-5.jpg";
-import slide6 from "./slides/slide-6.jpg";
-import slide7 from "./slides/slide-7.jpg";
-import slide8 from "./slides/slide-8.jpg";
-import slide9 from "./slides/slide-9.jpg";
-import slide10 from "./slides/slide-10.jpg";
-import slide11 from "./slides/slide-11.jpg";
-import slide12 from "./slides/slide-12.jpg";
-import slide13 from "./slides/slide-13.jpg";
-import slide14 from "./slides/slide-14.jpg";
-import slide15 from "./slides/slide-15.jpg";
-import slide16 from "./slides/slide-16.jpg";
-import slide17 from "./slides/slide-17.jpg";
-import slide18 from "./slides/slide-18.jpg";
-import slide19 from "./slides/slide-19.jpg";
-import slide20 from "./slides/slide-20.jpg";
-import slide21 from "./slides/slide-21.jpg";
-import slide22 from "./slides/slide-22.jpg";
-import slide23 from "./slides/slide-23.jpg";
-import slide24 from "./slides/slide-24.jpg";
-import slide25 from "./slides/slide-25.jpg";
+const sliderDB = [
+    {
+        id: 1,
+        title: "",
+        description: "",
+        source: "./slides/slide-1.jpg"
+    },
+    {
+        id: 2,
+        title: "",
+        description: "",
+        source: "./slides/slide-2.jpg"
+    },
+    {
+        id: 3,
+        title: "title 3",
+        description: "Lorem ipsum dolor sit amet",
+        source: "./slides/slide-3.jpg"
+    },
+    {
+        id: 4,
+        title: "",
+        description: "",
+        source: "./slides/slide-4.jpg"
+    },
+    {
+        id: 5,
+        title: "title 5",
+        description: "Lorem ipsum dolor sit amet",
+        source: "./slides/slide-5.jpg"
+    },
+    {
+        id: 6,
+        title: "",
+        description: "",
+        source: "./slides/slide-6.jpg"
+    },
+    {
+        id: 7,
+        title: "title 7",
+        description: "Lorem ipsum dolor sit amet",
+        source: "./slides/slide-7.jpg"
+    },
+    {
+        id: 8,
+        title: "",
+        description: "",
+        source: "./slides/slide-8.jpg"
+    },
+    {
+        id: 9,
+        title: "title 9",
+        description: "Lorem ipsum dolor sit amet",
+        source: "./slides/slide-9.jpg"
+    },
+    {
+        id: 10,
+        title: "",
+        description: "",
+        source: "./slides/slide-10.jpg"
+    },
+    {
+        id: 11,
+        title: "title 11",
+        description: "Lorem ipsum dolor sit amet",
+        source: "./slides/slide-11.jpg"
+    },
+    {
+        id: 12,
+        title: "",
+        description: "",
+        source: "./slides/slide-12.jpg"
+    },
+    {
+        id: 13,
+        title: "title 13",
+        description: "Lorem ipsum dolor sit amet",
+        source: "./slides/slide-13.jpg"
+    },
+    {
+        id: 14,
+        title: "",
+        description: "",
+        source: "./slides/slide-14.jpg"
+    },
+    {
+        id: 15,
+        title: "title 15",
+        description: "Lorem ipsum dolor sit amet",
+        source: "./slides/slide-15.jpg"
+    },
+    {
+        id: 16,
+        title: "",
+        description: "",
+        source: "./slides/slide-16.jpg"
+    },
+    {
+        id: 17,
+        title: "title 9",
+        description: "Lorem ipsum dolor sit amet",
+        source: "./slides/slide-17.jpg"
+    },
+    {
+        id: 18,
+        title: "",
+        description: "",
+        source: "./slides/slide-18.jpg"
+    },
+    {
+        id: 19,
+        title: "title 19",
+        description: "Lorem ipsum dolor sit amet",
+        source: "./slides/slide-19.jpg"
+    },
+    {
+        id: 20,
+        title: "",
+        description: "",
+        source: "./slides/slide-20.jpg"
+    },
+    {
+        id: 21,
+        title: "title 21",
+        description: "Lorem ipsum dolor sit amet",
+        source: "./slides/slide-21.jpg"
+    },
+    {
+        id: 22,
+        title: "",
+        description: "",
+        source: "./slides/slide-22.jpg"
+    },
+    {
+        id: 23,
+        title: "title 11",
+        description: "Lorem ipsum dolor sit amet",
+        source: "./slides/slide-23.jpg"
+    },
+    {
+        id: 24,
+        title: "",
+        description: "",
+        source: "./slides/slide-24.jpg"
+    },
+    {
+        id: 25,
+        title: "title 25",
+        description: "Lorem ipsum dolor sit amet",
+        source: "./slides/slide-25.jpg"
+    }
+]
 
-
-export default [slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8, slide9, slide10, slide11, slide12, slide13, slide14, slide15, slide16, slide17, slide18, slide19, slide20, slide21, slide22, slide23, slide24, slide25]
+export default sliderDB;
