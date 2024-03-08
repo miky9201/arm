@@ -4,8 +4,6 @@ import Text from './components/Text';
 import Navbar from './components/Navbar';
 import BlurDiv from './components/BlurDiv';
 import Slider from './components/Slider';
-import Arrow from './components/Arrow';
-import './App.css';
 
 function App() {
 
@@ -15,7 +13,7 @@ function App() {
     <BlurDiv>
       <Navbar />
       <Logo 
-        width='w-32' 
+        width='w-36' 
         padding='pt-[35vh]' 
         imgIndex={imgIndex} 
       />
@@ -34,8 +32,6 @@ function App() {
         imgIndex={imgIndex}
       />
       <Slider imgIndex={imgIndex} setImgIndex={setImgIndex}/>
-      <Arrow xDirection='right' yDirection='bottom' padding='p-7'/>
-      <Arrow xDirection='left' yDirection='bottom' padding='p-7'/>
     </ BlurDiv>
   );
 }

@@ -97,7 +97,7 @@ const sliderDB = [
     },
     {
         id: 17,
-        title: "title 9",
+        title: "title 17",
         description: "Lorem ipsum dolor sit amet",
         source: "./slides/slide-17.jpg"
     },
@@ -133,7 +133,7 @@ const sliderDB = [
     },
     {
         id: 23,
-        title: "title 11",
+        title: "title 23",
         description: "Lorem ipsum dolor sit amet",
         source: "./slides/slide-23.jpg"
     },

@@ -3,7 +3,10 @@ import { motion } from "framer-motion";
 
 function Text({ text, size, padding, textAlign, wSpacing, imgIndex }) {
     return (
-        <motion.p 
+        <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1 }}
             className={`
                 pointer-events-none
                 drop-shadow-md
