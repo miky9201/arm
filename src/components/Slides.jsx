@@ -1,15 +1,15 @@
-import React from 'react';
-import Text from './Text';
+import React from "react";
+import Text from "./Text";
 
-function Slides({imageSrc, imageTitle, imageDesc}) { 
-    return (
-        <div 
-            style={{
-                backgroundImage: `url(${imageSrc})`, 
-                backgroundSize: "cover", 
-                backgroundPosition: "center"
-            }} 
-            className='
+function Slides({ imageSrc, imageTitle, imageDesc }) {
+  return (
+    <div
+      style={{
+        backgroundImage: `url(${imageSrc})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+      className="
                 w-screen 
                 h-screen 
                 shrink-0 
@@ -18,20 +18,22 @@ function Slides({imageSrc, imageTitle, imageDesc}) {
                 flex flex-col 
                 justify-center 
                 items-center
-            '
-        >
-            <Text 
-                text={imageTitle} 
-                size='text-3xl' 
-                padding='pt-[0vh]'
-            />
-             <Text 
-                text={imageDesc} 
-                size='text-lg' 
-                padding='pt-[0vh]'
-            />
-        </div>
-    )
+            "
+    >
+      <Text
+        text={imageTitle}
+        size="text-3xl"
+        padding="pt-[0vh]"
+        textAlign="text-center"
+      />
+      <Text
+        text={imageDesc}
+        size="text-lg"
+        padding="pt-[0vh]"
+        textAlign="text-center"
+      />
+    </div>
+  );
 }
 
 export default Slides;

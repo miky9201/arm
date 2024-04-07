@@ -10,9 +10,10 @@ const DRAG_BUFFER = 50;
 function Slider({imgIndex, setImgIndex}) {
     // eslint-disable-next-line
     const [moving, setMoving] = useState(false); 
+
     const dragX = useMotionValue(0);
 
-    const onDragStart = () => {
+    const onDragStart = (e) => {
         setMoving(true)
     }
 
@@ -26,15 +27,17 @@ function Slider({imgIndex, setImgIndex}) {
         } else if (x >= DRAG_BUFFER && imgIndex > 0) {
             setImgIndex((position) => position - 1)
         }
+ 
+
     }
 
     return (
-        <div className='absolute h-svh w-svw bg-black -z-10 overflow-hidden'>
+        <div className={`absolute h-svh w-svw bg-black overflow-hidden`}>
             <motion.div 
                 drag="x"
                 dragConstraints={{
                     left: 0,
-                    right: 0
+                    right: 0,
                 }}
                 style={{
                     x: dragX
@@ -50,7 +53,7 @@ function Slider({imgIndex, setImgIndex}) {
                     return (    
                         <Slides 
                             key={slide.id} 
-                            imageSrc={slide.source} 
+                            imageSrc={slide.desktopSrc} 
                             imageTitle={slide.title} 
                             imageDesc={slide.description}
                         />
