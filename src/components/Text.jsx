@@ -13,7 +13,7 @@ function Text({
 }) {
   const isIntro = intro
     ? { opacity: { opacity: 0 }, transition: { delay: 0, duration: 4 } }
-    : { opacity: { opacity: 0 }, transition: { delay: 0.25, duration: 1 } };
+    : { opacity: { opacity: 1 }, transition: { delay: 0.25, duration: 1 } };
 
   return (
     <motion.p
