@@ -14,7 +14,7 @@ function Slides({ imageSrc, imageTitle, imageDesc, firstImage }) {
       }}
       className={`w-screen h-screen shrink-0 object-cover bg-no-repeat flex flex-col ${isFirst.justify} items-center`}
     >
-      <Text
+      {/* <Text
         text={imageTitle}
         size={isFirst.size}
         padding="pt-[0vh] pb-[6vh]"
@@ -25,7 +25,7 @@ function Slides({ imageSrc, imageTitle, imageDesc, firstImage }) {
         size="text-lg"
         padding="pt-[0vh]"
         textAlign="text-center"
-      />
+      /> */}
     </div>
   );
 }

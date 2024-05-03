@@ -1,13 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Logo from "./components/Logo";
 import Text from "./components/Text";
 import Navbar from "./components/Navbar";
 import Slider from "./components/Slider";
 import Contact from "./components/Contact";
+import SlideTitle from "./components/SlideTitle.jsx";
+
+import sliderDB from "./assets/slidesArray.js";
 
 function App() {
   const [imgIndex, setImgIndex] = useState(0);
   const [contactPageState, setContactPageState] = useState(false);
+  const [titleValue, setTitleValue] = useState("");
+  const [firstImg, setFirstImg] = useState(true);
+
+  useEffect(() => {
+    setTitleValue(sliderDB[imgIndex].title);
+    setFirstImg(sliderDB[imgIndex].firstImage);
+  }, [imgIndex]);
 
   return (
     <div className="absolute h-full w-svw flex flex-col justify-start items-center overflow-y-hidden">
@@ -43,6 +53,7 @@ function App() {
         imgIndex={imgIndex}
         contactPageState={contactPageState}
       />
+      <SlideTitle titleValue={titleValue} firstImg={firstImg} />
       <Contact contactPageState={contactPageState} />
     </div>
   );

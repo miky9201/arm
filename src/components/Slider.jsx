@@ -8,7 +8,6 @@ import sliderDB from "../assets/slidesArray.js";
 const DRAG_BUFFER = 50;
 
 function Slider({ imgIndex, setImgIndex }) {
-  console.log(sliderDB);
   // eslint-disable-next-line
   const [moving, setMoving] = useState(false);
 
@@ -51,16 +50,19 @@ function Slider({ imgIndex, setImgIndex }) {
       >
         {sliderDB.map((slide) => {
           return (
-            <Slides
-              key={slide.id}
-              imageSrc={slide.desktopSrc}
-              imageTitle={slide.title}
-              imageDesc={slide.description}
-              firstImage={slide.firstImage}
-            />
+            <>
+              <Slides
+                key={slide.id}
+                imageSrc={slide.desktopSrc}
+                imageTitle={slide.title}
+                imageDesc={slide.description}
+                firstImage={slide.firstImage}
+              />
+            </>
           );
         })}
       </motion.div>
+
       <Arrow
         xDirection="right"
         yDirection="bottom"
