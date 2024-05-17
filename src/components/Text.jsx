@@ -11,30 +11,42 @@ function Text({
   imgIndex,
   contactPageState,
 }) {
-  const isIntro = intro
-    ? { opacity: { opacity: 0 }, transition: { delay: 0, duration: 4 } }
-    : { opacity: { opacity: 1 }, transition: { delay: 0.25, duration: 1 } };
+  // const isIntro = intro
+  //   ? {
+  //       initial: { opacity: 0 },
+  //       animate: { opacity: 1 },
+  //       duration: { delay: 0, duration: 4 },
+  //     }
+  //   : {
+  //       initial: { opacity: 1 },
+  //       animate: { opacity: 1 },
+  //       duration: { delay: 0.25, duration: 1 },
+  //     };
 
   return (
-    <motion.p
-      initial={isIntro.opacity}
-      whileInView={{ opacity: 1 }}
-      transition={isIntro.transition}
+    <motion.div
+      // initial={isIntro.initial}
+      // animate={isIntro.animate}
+      // transition={isIntro.duration}
       className={`
-                pointer-events-none
+                z-10
                 drop-shadow-2xl
                 font-goldman 
                 text-white uppercase 
-                delay-200
+                delay-100
                 ${size} 
                 ${padding} 
                 ${textAlign} 
                 ${wSpacing}
-                ${imgIndex > 0 || contactPageState ? `-z-10` : `z-10`}
+                ${
+                  imgIndex > 0 || contactPageState
+                    ? `-translate-y-52 opacity-0 duration-200 transition-all`
+                    : `translate-y-0 opacity-100 duration-500 transition-all`
+                }
             `}
     >
       {text}
-    </motion.p>
+    </motion.div>
   );
 }
 

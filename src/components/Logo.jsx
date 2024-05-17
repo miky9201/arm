@@ -1,29 +1,24 @@
-import React from 'react';
-import { motion } from "framer-motion";
-import logo from '../assets/images/logo2.svg';
+import React from "react";
+import logo from "../assets/images/logo2.svg";
 
-function Logo({intro, width, padding, imgIndex, contactPageState}) {
-
-    const isIntro = intro ? { opacity: { opacity: 0 }, duration: { duration: 4 }} : { opacity: { opacity: 0 }, duration: { duration: 1 }}
-
-
-    return (
-        <motion.img
-            initial={isIntro.opacity}
-            whileInView={{ opacity: 1 }}
-            transition={isIntro.duration}
-            // transition={{ type: "spring", duration: 0.8, bounce: 0.1 }}
-            className={`
-                delay-200
-                pointer-events-none 
+function Logo({ intro, width, padding, imgIndex, contactPageState }) {
+  return (
+    <img
+      className={`
+                z-10
+                delay-100
                 ${width} 
                 ${padding}
-                ${imgIndex > 0 || contactPageState ? `-z-10` : `z-10`}
-            `} 
-            src={logo} 
-            alt='logo-arm'
-        />
-    );
+                ${
+                  imgIndex > 0 || contactPageState
+                    ? "-translate-y-52 opacity-0 duration-200 transition-all"
+                    : "translate-y-0 opacity-100 duration-500 transition-all"
+                }
+            `}
+      src={logo}
+      alt="logo-arm"
+    />
+  );
 }
 
 export default Logo;

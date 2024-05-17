@@ -66,14 +66,14 @@ function Slider({ imgIndex, setImgIndex }) {
       <Arrow
         xDirection="right"
         yDirection="bottom"
-        padding="p-7"
+        padding="p-0"
         imgIndex={imgIndex}
         setImgIndex={setImgIndex}
       />
       <Arrow
         xDirection="left"
         yDirection="bottom"
-        padding="p-7"
+        padding="p-0"
         imgIndex={imgIndex}
         setImgIndex={setImgIndex}
       />
