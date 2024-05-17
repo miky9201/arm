@@ -25,7 +25,7 @@ function Contact({ contactPageState }) {
       transition={{ delay: 0, duration: 0.5 }}
     >
       <div className="w-9/12 h-1/2 flex flex-col justify-center items-center p-4 md:p-20">
-        <Logo width="w-36" padding="pt-[0vh]" />
+        <Logo width="w-28" padding="pt-[0vh]" />
         <Text
           text="07.78.70.08.70"
           size="text-sm"
