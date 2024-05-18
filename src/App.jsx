@@ -26,7 +26,12 @@ function App() {
 
   return (
     <div className="absolute h-full w-svw flex flex-col justify-start items-center overflow-y-hidden">
-      <Slider imgIndex={imgIndex} setImgIndex={setImgIndex} />
+      <Slider
+        imgIndex={imgIndex}
+        setImgIndex={setImgIndex}
+        contactPageState={contactPageState}
+        setContactPageState={setContactPageState}
+      />
       <Navbar
         contactPageState={contactPageState}
         setContactPageState={setContactPageState}

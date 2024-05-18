@@ -7,7 +7,12 @@ import sliderDB from "../assets/slidesArray.js";
 
 const DRAG_BUFFER = 50;
 
-function Slider({ imgIndex, setImgIndex }) {
+function Slider({
+  imgIndex,
+  setImgIndex,
+  contactPageState,
+  setContactPageState,
+}) {
   // eslint-disable-next-line
   const [moving, setMoving] = useState(false);
 
@@ -69,13 +74,15 @@ function Slider({ imgIndex, setImgIndex }) {
         padding="p-0"
         imgIndex={imgIndex}
         setImgIndex={setImgIndex}
+        contactPageState={contactPageState}
+        setContactPageState={setContactPageState}
       />
       <Arrow
         xDirection="left"
         yDirection="bottom"
         padding="p-0"
-        imgIndex={imgIndex}
-        setImgIndex={setImgIndex}
+        contactPageState={contactPageState}
+        setContactPageState={setContactPageState}
       />
     </div>
   );
