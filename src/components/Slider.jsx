@@ -81,6 +81,8 @@ function Slider({
         xDirection="left"
         yDirection="bottom"
         padding="p-0"
+        imgIndex={imgIndex}
+        setImgIndex={setImgIndex}
         contactPageState={contactPageState}
         setContactPageState={setContactPageState}
       />
