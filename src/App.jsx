@@ -14,6 +14,10 @@ function App() {
   const [titleValue, setTitleValue] = useState("");
   const [firstImg, setFirstImg] = useState(true);
   const [firstRender, setFirstRender] = useState(true);
+  const [viewportSize, setviewportSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
 
   useEffect(() => {
     setTitleValue(sliderDB[imgIndex].title);
@@ -22,6 +26,16 @@ function App() {
 
   useEffect(() => {
     setFirstRender(false);
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setviewportSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+    window.addEventListener("resize", handleResize, false);
   }, []);
 
   return (
@@ -69,7 +83,13 @@ function App() {
           contactPageState={contactPageState}
         />
       </div>
-      <SlideTitle titleValue={titleValue} firstImg={firstImg} />
+
+      <SlideTitle
+        titleValue={titleValue}
+        firstImg={firstImg}
+        viewportSize={viewportSize}
+      />
+
       <Contact contactPageState={contactPageState} />
     </div>
   );

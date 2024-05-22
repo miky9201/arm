@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 
 function Text({
   intro,
@@ -11,23 +10,8 @@ function Text({
   imgIndex,
   contactPageState,
 }) {
-  // const isIntro = intro
-  //   ? {
-  //       initial: { opacity: 0 },
-  //       animate: { opacity: 1 },
-  //       duration: { delay: 0, duration: 4 },
-  //     }
-  //   : {
-  //       initial: { opacity: 1 },
-  //       animate: { opacity: 1 },
-  //       duration: { delay: 0.25, duration: 1 },
-  //     };
-
   return (
-    <motion.div
-      // initial={isIntro.initial}
-      // animate={isIntro.animate}
-      // transition={isIntro.duration}
+    <div
       className={`
                 z-10
                 drop-shadow-2xl
@@ -46,7 +30,7 @@ function Text({
             `}
     >
       {text}
-    </motion.div>
+    </div>
   );
 }
 
