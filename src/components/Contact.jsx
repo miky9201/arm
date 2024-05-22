@@ -14,7 +14,7 @@ function Contact({ contactPageState }) {
         flex-col 
         justify-center 
         items-center 
-        bg-gray-950 
+        bg-black 
         divide-y
         md:divide-x
         md:divide-y-0
