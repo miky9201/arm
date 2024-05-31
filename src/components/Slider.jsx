@@ -5,7 +5,7 @@ import Arrow from "./Arrow";
 
 import sliderDB from "../assets/slidesArray.js";
 
-const DRAG_BUFFER = 50;
+const DRAG_BUFFER = 20;
 
 function Slider({
   imgIndex,

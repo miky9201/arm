@@ -16,7 +16,7 @@ function Logo({ width, padding, imgIndex, contactPageState }) {
                 }
             `}
       src={logo}
-      alt="logo-arm"
+      alt="arm-paris-menuiserie-agencement"
     />
   );
 }
