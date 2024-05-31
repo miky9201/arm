@@ -1,7 +1,6 @@
 import React from "react";
 
 function Text({
-  intro,
   text,
   size,
   padding,

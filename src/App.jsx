@@ -58,14 +58,12 @@ function App() {
         } duration-[6000ms] flex flex-col justify-start items-center pointer-events-none`}
       >
         <Logo
-          intro
           width="w-40"
           padding="pt-[35vh]"
           imgIndex={imgIndex}
           contactPageState={contactPageState}
         />
         <Text
-          intro
           text="Agencement Bois"
           size="text-lg"
           padding="pt-[0vh]"
@@ -73,7 +71,6 @@ function App() {
           contactPageState={contactPageState}
         />
         <Text
-          intro
           text="Appartement Evènementiel Restauration Retail"
           size="text-lg"
           padding="pt-[10vh]"

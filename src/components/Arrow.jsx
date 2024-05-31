@@ -22,7 +22,6 @@ function Arrow({
 
   useEffect(() => {
     const handleKeyDown = (event) => {
-      console.log(event);
       if (event.key === "ArrowLeft" && imgIndex > 0) {
         // Appel de la fonction pour la touche gauche
         setImgIndex((position) => position - 1);

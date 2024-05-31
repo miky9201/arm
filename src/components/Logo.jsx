@@ -1,7 +1,7 @@
 import React from "react";
-import logo from "../assets/images/logo2.svg";
+import logo from "../assets/images/logo.svg";
 
-function Logo({ intro, width, padding, imgIndex, contactPageState }) {
+function Logo({ width, padding, imgIndex, contactPageState }) {
   return (
     <img
       className={`
